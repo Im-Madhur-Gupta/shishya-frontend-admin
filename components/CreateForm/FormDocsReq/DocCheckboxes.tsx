@@ -3,8 +3,7 @@ import React from 'react'
 import { Checkbox, Row } from 'antd'
 import { CheckboxChangeEvent } from 'antd/lib/checkbox'
 
-import useFormStore from '../formStore'
-import AxiosInstance from '../../../services/AxiosInstance'
+import useFormStore from '../../../store/formStore'
 
 import inputStyles from '../../../styles/Components/CustomInput.module.css'
 

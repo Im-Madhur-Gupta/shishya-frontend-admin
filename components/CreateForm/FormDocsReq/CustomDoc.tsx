@@ -1,9 +1,9 @@
 import React from 'react'
 
 import { Button } from 'antd'
-import { DeleteOutlined, SaveOutlined } from '@ant-design/icons'
+import { DeleteOutlined } from '@ant-design/icons'
 
-import useFormStore from '../formStore'
+import useFormStore from '../../../store/formStore'
 
 type CustomDocType = {
 	title: string | null

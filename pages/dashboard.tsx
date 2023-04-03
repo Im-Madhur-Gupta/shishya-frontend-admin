@@ -1,13 +1,12 @@
 // @ts-nocheck
 
 import React, { useState, useEffect } from 'react'
-import CreateFormComp from '../components/dashboard/create-newform'
-import TopCards from '../components/dashboard/top-cards'
-import styles from '../styles/Pages/dashboard.module.css'
-import { Pie } from '@ant-design/plots'
+import CreateFormComp from '../components/Dashboard/CreateNewform'
+import TopCards from '../components/Dashboard/TopCards'
 import CustomInput from '../components/CustomInput'
-import { Line } from '@ant-design/plots'
-import RightBottomModal from '../components/dashboard/rightBottomModal'
+import RightBottomModal from '../components/Dashboard/RightBottomModal'
+import { Pie, Line } from '@ant-design/plots'
+import styles from '../styles/Pages/Dashboard.module.css'
 
 const Dashboard = () => {
 	const [resdata, setResData] = useState([])

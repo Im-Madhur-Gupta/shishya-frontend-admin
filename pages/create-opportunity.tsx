@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from '../styles/Pages/create-form.module.css'
+import styles from '../styles/Pages/CreateForm.module.css'
 
 import CustomButton from '../components/CustomButton'
 import CreateJobStatus from '../components/CreateJobStatus'
-import OpportunityDetails from '../components/createOpportunity/OpportunityDetails'
-import EligibilityReq from '../components/createOpportunity/EligibilityReq'
-import DocumentsReq from '../components/createOpportunity/DocumentsReq'
+import OpportunityDetails from '../components/CreateOpportunity/OpportunityDetails'
+import EligibilityReq from '../components/CreateOpportunity/EligibilityReq'
+import OpportunityDocsReq from '../components/CreateOpportunity/OpportunityDocsReq'
 
 const CreateJob = () => {
 	const [step, setStep] = React.useState(1)
@@ -17,7 +17,7 @@ const CreateJob = () => {
 			case 2:
 				return <EligibilityReq />
 			case 3:
-				return <DocumentsReq />
+				return <OpportunityDocsReq />
 			default:
 				return null
 		}

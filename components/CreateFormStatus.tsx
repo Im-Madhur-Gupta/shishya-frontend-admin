@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Components/create-form-status.module.css'
+import styles from '../styles/Components/CreateFormStatus.module.css'
 
 type CreateFormStatusType = {
 	currentStep: number

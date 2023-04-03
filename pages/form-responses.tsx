@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomButton from '../components/CustomButton'
 import CustomTable from '../components/table'
-import styles from '../styles/Pages/form-response.module.css'
+import styles from '../styles/Pages/FormResponse.module.css'
 
 const FormResponses = () => {
 	return (

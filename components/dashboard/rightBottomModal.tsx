@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/Components/right-modal-dash.module.css'
+import styles from '../../styles/Components/RightModalDash.module.css'
 
 const RightBottomModal = () => {
 	return (

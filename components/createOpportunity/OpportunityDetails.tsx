@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import CustomInput from '../CustomInput'
 
-import styles from '../../styles/Pages/create-form-step1.module.css'
+import styles from '../../styles/Pages/CreateFormStep1.module.css'
 
 const OpportunityDetails = () => {
 	const opportunityNatureData = [

@@ -1,13 +1,13 @@
 import React from 'react'
 
-import DocCheckboxes from '../create-form/createFormStep2/DocCheckboxes'
-import CustomDoc from '../create-form/createFormStep2/CustomDoc'
+import DocCheckboxes from '../CreateForm/FormDocsReq/DocCheckboxes'
+import CustomDoc from '../CreateForm/FormDocsReq/CustomDoc'
 
 import { Button } from 'antd'
 import { MdLibraryAdd } from 'react-icons/md'
 
 import inputStyles from '../../styles/Components/CustomInput.module.css'
-import styles from '../../styles/Pages/create-form-step1.module.css'
+import styles from '../../styles/Pages/CreateFormStep1.module.css'
 
 const DocumentsReq = () => {
 	const [selectedCheckboxOptions, setSelectedCheckboxOptions] = React.useState<

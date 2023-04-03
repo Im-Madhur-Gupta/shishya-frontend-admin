@@ -1,14 +1,16 @@
 import React from 'react'
-import styles from '../styles/Pages/create-form.module.css'
+
+import useFormStore from '../store/formStore'
+import FormDetails from '../components/CreateForm/FormDetails'
+import FormDocsReq from '../components/CreateForm/FormDocsReq'
 import CreateFormStatus from '../components/CreateFormStatus'
 import CustomButton from '../components/CustomButton'
-
-import useFormStore from '../components/create-form/formStore'
-
-import CreateFormStep1 from '../components/create-form/create-form-step-1'
-import CreateFormStep2 from '../components/create-form/createFormStep2'
-
 import AxiosInstance from '../services/AxiosInstance'
+
+import styles from '../styles/Pages/CreateForm.module.css'
+
+const ACCESS_TOKEN = process.env.BACKEND_API_TOKEN
+const OWNER_ID = 2
 
 const CreateForm = () => {
 	const [step, setStep] = React.useState(1)
@@ -16,17 +18,13 @@ const CreateForm = () => {
 	const handleStep = () => {
 		switch (step) {
 			case 1:
-				return <CreateFormStep1 />
+				return <FormDetails />
 			case 2:
-				return <CreateFormStep2 />
+				return <FormDocsReq />
 			default:
 				return null
 		}
 	}
-
-	const ACCESS_TOKEN = process.env.BACKEND_API_TOKEN;
-
-	const OWNER_ID = 2
 
 	const submitHandler = async () => {
 		try {

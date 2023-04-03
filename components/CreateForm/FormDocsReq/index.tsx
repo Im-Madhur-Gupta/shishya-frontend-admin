@@ -1,17 +1,15 @@
 import React from 'react'
 
+import useFormStore from '../../../store/formStore'
 import DocCheckboxes from './DocCheckboxes'
 import CustomDoc from './CustomDoc'
-
-import useFormStore from '../formStore'
 
 import { Button } from 'antd'
 import { MdLibraryAdd } from 'react-icons/md'
 
 import inputStyles from '../../../styles/Components/CustomInput.module.css'
-import styles from '../../../styles/Pages/create-form-step1.module.css'
 
-const CreateFormStep2 = () => {
+const FormDocsReq = () => {
 	const { customDocs, addCustomDocComponent, deleteCustomDocComponent } =
 		useFormStore()
 
@@ -85,4 +83,4 @@ const CreateFormStep2 = () => {
 	)
 }
 
-export default CreateFormStep2
+export default FormDocsReq
