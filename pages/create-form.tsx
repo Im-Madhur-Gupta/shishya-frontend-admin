@@ -24,8 +24,7 @@ const CreateForm = () => {
 		}
 	}
 
-	const ACCESS_TOKEN =
-		'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4Nzc5NDEzLCJpYXQiOjE2NjE0OTk0MTMsImp0aSI6IjdiM2E2NzYzNWIxYjRkYWZiMTljYTg1NmI3NGQ0MWI1IiwidXNlcl9pZCI6Mn0.dzHFep_buR6XWpNCkrOkGEuh7Ah1H3M0M1sfL85XogM'
+	const ACCESS_TOKEN = process.env.BACKEND_API_TOKEN;
 
 	const OWNER_ID = 2
 
